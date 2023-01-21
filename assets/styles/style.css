@@ -322,3 +322,30 @@ nav ul li a:hover {
 }
 
 /* PORTFOLIO SECTION */
+
+.progetti-container{
+    min-height: 10vh;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+.progetti-container p{
+    text-align: center;
+    font-size: 3rem;
+
+
+}
+.progetti-container button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 60rem;
+    margin-top: 4rem;
+    outline: none;
+    background-color: #BB2328;
+    border: none;
+    border-radius: 2rem;
+    color: #DDD5D0;
+
+
+
+}
