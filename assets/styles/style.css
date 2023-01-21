@@ -3,61 +3,77 @@
     font-family: 'logo';
     src: url('/assets/fonts/Kalam-Regular.ttf');
 }
+
 @font-face {
     font-family: 'normal';
     src: url('/assets/fonts/SofiaSans-Regular.ttf');
 }
+
 @font-face {
     font-family: 'medium';
     src: url('/assets/fonts/SofiaSans-Medium.ttf');
 }
+
 /* GLOBAL STYLINGS */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-html,body{
+
+html,
+body {
     font-size: 62.5%;
 }
-body{
+
+body {
     font-family: 'normal', sans-serif;
     background: #DDD5D0;
     color: #312F2F;
 }
-h1{
+
+h1 {
     font-size: 2.5rem;
 }
+
 li,
 button,
 label,
 input,
-p{
+p {
     font-size: 2rem;
 }
-h2{
+
+h2 {
     font-size: 4.8rem;
 }
-h3{
+
+h3 {
     font-size: 3rem;
 }
-h4,h5{
-font-size: 2.5rem;
+
+h4,
+h5 {
+    font-size: 2.5rem;
 }
-button{
+
+button {
     padding: 2rem 6rem;
 }
-.heading{
+
+.heading {
     text-align: center;
     margin-top: 3rem;
 }
-.heading h2{
+
+.heading h2 {
     font-size: 4rem;
     padding-bottom: 2rem;
 }
-.heading span{
+
+.heading span {
     font-size: 2rem;
     color: #BB2328;
     font-weight: 500;
@@ -65,11 +81,12 @@ button{
 
 
 /* navbar */
-.main-head{
+.main-head {
     background: #DDD5D0;
     top: 0px;
 }
-nav{
+
+nav {
     display: flex;
     width: 90%;
     margin: auto;
@@ -78,32 +95,37 @@ nav{
     align-items: center;
     flex-wrap: wrap;
 }
-nav h1{
+
+nav h1 {
     font-family: 'logo', sans-serif;
     font-size: 3.4rem;
     text-transform: uppercase;
     flex: 1 1 40rem;
     letter-spacing: 1px;
 }
-nav h1 span{
+
+nav h1 span {
     color: #BB2328;
-    
-    
-}
-nav ul{
-  display: flex;
-  flex: 1 1 40rem;
-  justify-content: space-around;
-  list-style: none;
-  list-style-type: none;
-  align-items: center;
 
 
 }
-nav ul li{
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    list-style: none;
+    list-style-type: none;
+    align-items: center;
+
+
+}
+
+nav ul li {
     text-decoration: none;
 }
-nav ul li a{
+
+nav ul li a {
     position: relative;
     text-transform: uppercase;
     color: #312F2F;
@@ -112,29 +134,33 @@ nav ul li a{
     font-family: 'medium', sans-serif;
 
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 3px;
     bottom: 0;
     left: 0;
-    background: #BB2328 ;
+    background: #BB2328;
     transform-origin: bottom left right;
     transition: transform 0.3s ease-out;
     transform: scaleX(0);
 
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     transform: scaleX(1);
-    
+
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #BB2328;
     border: none;
 }
+
 .active {
-   
+
     border-left: 3px solid #1C2933;
     border-right: 3px solid #1C2933;
     border-radius: 4rem;
@@ -142,40 +168,43 @@ nav ul li a:hover{
     padding-right: 1.5rem;
     padding-left: 1.5rem;
 }
+
 /* HERO SECTION  */
 
-.hero{
-   
-    background: linear-gradient(
-    to right,
-   #1C2933 0%,
-   #1C2933 50%,
-    #BB2328 50%,
-  #BB2328 100%
-  );
+.hero {
+
+    background: linear-gradient(to right,
+            #1C2933 0%,
+            #1C2933 50%,
+            #BB2328 50%,
+            #BB2328 100%);
 }
-.text-section{
+
+.text-section {
 
     display: flex;
     flex: 2 1 auto;
-    align-items: center;;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-   margin-left: 80rem;
-  gap: 2rem;
- margin-top: -300px;
- padding-bottom: 5rem;
+    margin-left: 80rem;
+    gap: 2rem;
+    margin-top: -300px;
+    padding-bottom: 5rem;
 
 }
-.text-section h3{
+
+.text-section h3 {
     font-size: 70px;
     text-align: center;
     color: #DDD5D0;
 }
-.text-section p{
+
+.text-section p {
     font-size: 30px;
 }
-.text-section button{
+
+.text-section button {
     margin-top: 20px;
     background-color: #1C2933;
     color: #DDD5D0;
@@ -184,47 +213,112 @@ nav ul li a:hover{
     border-radius: 3rem;
     cursor: pointer;
 }
-.foto-section{
+
+.foto-section {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     margin-left: 10rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
-    
-  
+
+
 }
-.foto-section img{
+
+.foto-section img {
     width: 20%;
     margin-left: 20px;
-    margin-top: 40px;
+    margin-top: 4rem;
     background: #DDD5D0;
     border-radius: 50%;
-    box-shadow: 10px 10px 2px 2px #DDD5D0;
+
 }
 
 /* INTRO SECTION */
 
-.intro-container{
+.intro-container {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3px;
     margin-top: 4rem;
     margin-bottom: 5rem;
     margin-right: 10rem;
 }
-.intro-img img{
+
+.intro-img img {
     width: 80%;
 }
 
-.intro-text{
-  
+.intro-text {
+
     padding-top: 200px;
     line-height: 4rem;
 }
-.info-text p{
+
+.info-text p {
     font-weight: 500;
     font-size: 3.4rem;
     line-height: 20px;
 }
+
+/* SKILLLS SECTION */
+
+.skills .heading {
+    background-color: #1C2933;
+    color: #DDD5D0;
+    padding: 20px;
+    padding-top: 4rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.skill-container {
+    background: #6E1B25;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    gap: 3px;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+.skills-box {
+    padding: 10rem;
+    padding-right: 35rem;
+    margin: 16px;
+    box-shadow: 5px 5px 14px 5px #ddd5d0;
+    border-radius: 3rem;
+    padding-right: 2rem;
+
+
+}
+
+.skills-box img {
+
+    justify-content: center;
+    margin-left: 1rem;
+    width: 50%;
+    height: 80%;
+    object-fit: contain;
+    align-content: center;
+    margin-top: 1em;
+    align-content: center;
+
+}
+
+.skills-box h2 {
+    color: #DDD5D0;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-left: -8rem;
+}
+
+.skills-box p {
+    color: #DDD5D0;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-left: -8rem;
+}
+
+/* PORTFOLIO SECTION */
