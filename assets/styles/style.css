@@ -66,11 +66,13 @@ button {
 .heading {
     text-align: center;
     margin-top: 3rem;
+    color: #1C2933;
 }
 
 .heading h2 {
     font-size: 4rem;
     padding-bottom: 2rem;
+    
 }
 
 .heading span {
@@ -90,7 +92,7 @@ nav {
     display: flex;
     width: 90%;
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     min-height: 10vh;
     align-items: center;
     flex-wrap: wrap;
@@ -212,6 +214,11 @@ nav ul li a:hover {
     border: none;
     border-radius: 3rem;
     cursor: pointer;
+transition: all .2s ease-in-out;
+
+}
+.text-section button:hover{
+    background-color: rgba(33, 55, 72, 0.9) ;
 }
 
 .foto-section {
@@ -245,6 +252,10 @@ nav ul li a:hover {
     margin-bottom: 5rem;
     margin-right: 10rem;
 }
+.intro .heading{
+    color: #1C2933;
+
+}
 
 .intro-img img {
     width: 80%;
@@ -266,7 +277,7 @@ nav ul li a:hover {
 
 .skills .heading {
     background-color: #1C2933;
-    color: #DDD5D0;
+   color: #DDD5D0;
     padding: 20px;
     padding-top: 4rem;
     text-align: center;
@@ -323,18 +334,20 @@ nav ul li a:hover {
 
 /* PORTFOLIO SECTION */
 
-.progetti-container{
+.progetti-container {
     min-height: 10vh;
     padding-top: 5rem;
-    padding-bottom: 4rem;
+    padding-bottom: 9rem;
 }
-.progetti-container p{
+
+.progetti-container p {
     text-align: center;
     font-size: 3rem;
 
 
 }
-.progetti-container button{
+
+.progetti-container button {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -345,7 +358,68 @@ nav ul li a:hover {
     border: none;
     border-radius: 2rem;
     color: #DDD5D0;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    
+}
+.progetti-container button:hover{
+    background-color: rgba(205, 37, 42,0.9);
+}
 
+/* CONTACT SECTION */
+.contact {
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/images/pc.jpg");
+}
 
+.contact-container {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(185, 30, 35, 0.85);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #DDD5D0;
 
+}
+
+.contact-container h1,
+h2 {
+    padding-bottom: 2rem;
+   
+}
+
+.contact-container button {
+    background-color: #1C2933;
+    color: #DDD5D0;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    transition: all .2s ease;
+
+}
+
+.contact-container button:hover {
+    background-color: rgba(33, 55, 72, 0.9);
+}
+/* FOOTER SECTION */
+footer{
+    min-height: 10vh;
+    background-color: #1C2933;
+}
+footer p{
+    color: #DDD5D0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+   text-align: center;
+   padding: 3rem;
 }
