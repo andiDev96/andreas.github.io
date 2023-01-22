@@ -372,7 +372,7 @@ transition: all .2s ease-in-out;
     height: 50vh;
     background-position: center;
     background-size: cover;
-    background-image: url("/assets/images/pc.jpg");
+    background-image: url("assets/images/pc.jpg");
 }
 
 .contact-container {
