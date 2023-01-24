@@ -1,21 +1,21 @@
 /* IMPORTING FONT */
 @font-face {
     font-family: 'logo';
-    src: url('/assets/fonts/Kalam-Regular.ttf');
+    src: url('../fonts/Kalam-Regular.ttf');
 }
 
 @font-face {
     font-family: 'normal';
-    src: url('/assets/fonts/SofiaSans-Regular.ttf');
+    src: url('../fonts/SofiaSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'medium';
-    src: url('/assets/fonts/SofiaSans-Medium.ttf');
+    src: url('../fonts/SofiaSans-Medium.ttf');
 }
 @font-face {
     font-family: 'bold' ;
-    src: url("/assets/fonts/SofiaSans-ExtraBold.ttf");
+    src: url("../fonts/SofiaSans-ExtraBold.ttf");
 }
 
 /* GLOBAL STYLINGS */
@@ -376,7 +376,7 @@ transition: all .2s ease-in-out;
     height: 50vh;
     background-position: center;
     background-size: cover;
-    background-image: url("/assets/images/pc.jpg");
+    background-image: url("../images/pc.jpg");
 }
 
 .contact-container {
