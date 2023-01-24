@@ -13,6 +13,10 @@
     font-family: 'medium';
     src: url('/assets/fonts/SofiaSans-Medium.ttf');
 }
+@font-face {
+    font-family: 'bold' ;
+    src: url("/assets/fonts/SofiaSans-ExtraBold.ttf");
+}
 
 /* GLOBAL STYLINGS */
 
@@ -267,10 +271,10 @@ transition: all .2s ease-in-out;
     line-height: 4rem;
 }
 
-.info-text p {
+.intro-text p {
     font-weight: 500;
-    font-size: 3.4rem;
-    line-height: 20px;
+    font-size: 3.3rem;
+    line-height: 50px;
 }
 
 /* SKILLLS SECTION */
@@ -423,3 +427,80 @@ footer p{
    text-align: center;
    padding: 3rem;
 }
+
+aside{
+    min-height: 30vh;
+    background-color: #BB2328;
+}
+aside h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 8rem;
+    color: #DDD5D0;
+
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-right: 2rem;
+    margin-left: 22rem;
+
+}
+.about-container img{
+    width: 80%;
+}
+.about-container p{
+    text-align: left;
+    padding: 3rem;
+
+}
+.about-text b{
+    font-family: 'bold', sans-serif ;
+
+}
+.about-container button{
+    align-content: center;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    padding: 2rem 6rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.esperienze-container{
+    margin-top: 22rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 10rem;
+    
+}
+.sinistra{
+    padding-bottom: 2rem;
+    margin-left: 10rem;
+}
+.sinistra h2{
+    color: #BB2328;
+}
+.sinistra p{
+    line-height: 40px;
+    font-size: 22px;
+  
+}
+.destra{
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    margin-left: 8rem;
+}
+.destra h4{
+    padding-bottom: 2rem;
+}
+.destra p{
+    padding-bottom: 2rem;
+}
+
