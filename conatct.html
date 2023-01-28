@@ -42,14 +42,18 @@
                        <p> Prometto di rispondere al più presto! 🙂</p>
                 </div>
                 <div class="right">
-                   <form action="">
+                   <form action="https://formsubmit.co/andidev96@gmail.com" method="post">
                     <label> Il tuo nome</label>
-                    <input type="text" required>
+                    <input type="text" name="nome" required >
                     <label for="email">La tua email</label>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
+                    <input type="hidden" name="_autoresponse"
+                     value="Grazie per aver contattato il mio form ti contatterò al più presto possibile">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="index.html">
                     <label for="content">Il tuo mesaggio</label>
                     <textarea></textarea>
-                    <button>Invia</button>
+                    <button type="submit">Invia</button>
                    </form>
                     
                 </div>
