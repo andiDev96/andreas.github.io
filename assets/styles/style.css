@@ -588,6 +588,7 @@ form button{
     border-radius: 1rem;
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 /* footer section */
