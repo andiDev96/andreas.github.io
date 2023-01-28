@@ -1,21 +1,21 @@
 /* IMPORTING FONT */
 @font-face {
     font-family: 'logo';
-    src: url('/../Personal-Portfolio/assets/fonts/Kalam-Regular.ttf');
+    src: url('../fonts/Kalam-Regular.ttf');
 }
 
 @font-face {
     font-family: 'normal';
-    src: url('/../Personal-Portfolio/assets/fonts/SofiaSans-Regular.ttf');
+    src: url('../fonts/SofiaSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'medium';
-    src: url('/../Personal-Portfolio/assets/fonts/SofiaSans-Medium.ttf');
+    src: url('../fonts/SofiaSans-Medium.ttf');
 }
 @font-face {
     font-family: 'bold' ;
-    src: url("/../Personal-Portfolio/assets/fonts/SofiaSans-ExtraBold.ttf");
+    src: url('../fonts/SofiaSans-ExtraBold.ttf');
 }
 
 /* GLOBAL STYLINGS */
@@ -26,7 +26,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+a{
+    list-style: none;
+    text-decoration: none;
+}
 html,
 body {
     font-size: 62.5%;
@@ -273,8 +276,9 @@ transition: all .2s ease-in-out;
 
 .intro-text p {
     font-weight: 500;
-    font-size: 3.3rem;
+    font-size: 2rem;
     line-height: 50px;
+    
 }
 
 /* SKILLLS SECTION */
@@ -427,7 +431,7 @@ footer p{
    text-align: center;
    padding: 3rem;
 }
-
+/* about me page */
 aside{
     min-height: 30vh;
     background-color: #BB2328;
@@ -503,4 +507,136 @@ aside h2{
 .destra p{
     padding-bottom: 2rem;
 }
+
+/* conatct me page */
+
+aside h2{
+    letter-spacing: 2px;
+}
+.contact-me{
+    padding-top: 9rem;
+}
+.contact-container{
+    position: relative;
+    display: flex;
+   
+  
+}
+.contact-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 9rem;
+    margin-bottom: 3rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    align-items: center;
+    padding: 2rem;
+}
+.left h2{
+    color: #BB2328;
+    letter-spacing: 2px;
+}
+.left p{
+    padding-bottom: 3rem;
+    line-height: 4rem;
+}
+.right{
+    display: flex;
+    font-display: column;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+    background: #6E1B25;
+    color: #DDD5D0;
+    margin-left: 9rem;
+    
+    box-shadow: 12px 7px 15px -1px #1C2933;
+   
+}
+label{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'bold', sans-serif;
+    letter-spacing: 1px;
+    
+    
+
+}
+form input{
+    outline: none;
+    width: 32rem;
+    padding: 1rem;
+    
+}
+textarea{
+   width: 32rem;
+    resize: none;
+    outline: none;
+    padding-bottom: 32rem;
+}
+form button{
+    display: flex;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+/* footer section */
+.footer{
+    min-height: 40vh;
+    background: #c5c4c3;
+    
+
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 10rem;
+}
+.social{
+   margin-left: 3rem;
+   padding-bottom: 4rem;
+}
+.social h2{
+    color: #BB2328;
+    padding-bottom: 7rem;
+    margin-left: 4rem;
+
+}
+.social a{
+    font-size: 60px;
+    margin-left: 4rem;
+    color: #1C2933;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.social a:hover{
+    color: #BB2328;
+}
+.text-social{
+    margin-left: 10rem;
+}
+.text-social h3{
+    font-size: 32px;
+    padding-bottom: 6rem;
+}
+.text-social p{
+    margin-left: 4rem;
+}
+
+
+
+
+
+
 
