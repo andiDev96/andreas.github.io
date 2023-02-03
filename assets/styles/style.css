@@ -154,7 +154,7 @@ nav ul li a::after {
     left: 0;
     background: #BB2328;
     transform-origin: bottom left right;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.9s ease-out;
     transform: scaleX(0);
 
 }
